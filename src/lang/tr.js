@@ -6,7 +6,7 @@ const tr = {
   projects: "Projeler",
   about: "Hakkımda",
   welcome: "Portföyüme Hoş Geldiniz",
-  title: "Emel Yıldırım'ın Portföyü",
+  title: "Emel Yıldırım",
   footer: "Portföyüm",
   year: "2025",
   contName: "İsim:",
