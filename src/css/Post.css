@@ -1,0 +1,42 @@
+.post {
+  padding: 28px 0 8px;
+}
+
+.post-head {
+  display: grid;
+  gap: 10px;
+}
+
+.post-title {
+  margin: 0;
+}
+
+.post-sub {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.prose {
+  max-width: 78ch;
+  line-height: 1.75;
+  color: rgba(13, 19, 32, 0.88);
+}
+
+.prose h2 {
+  margin: 18px 0 8px;
+  font-family: var(--font-display);
+  letter-spacing: -0.01em;
+}
+
+.prose ul {
+  margin: 10px 0;
+  padding-left: 18px;
+}
+
+.prose li {
+  margin: 6px 0;
+}
+

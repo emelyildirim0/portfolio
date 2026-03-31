@@ -1,0 +1,35 @@
+.about {
+  padding: 28px 0 8px;
+}
+
+.about-lead {
+  margin: 8px 0 0;
+}
+
+.about-side {
+  display: grid;
+  gap: 12px;
+}
+
+.about-card {
+  border: 1px solid var(--border);
+  background: rgba(255, 255, 255, 0.72);
+  border-radius: var(--radius-sm);
+  padding: 16px;
+}
+
+.about-kicker {
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  font-size: 11px;
+  color: rgba(13, 19, 32, 0.55);
+}
+
+.about-list {
+  margin-top: 12px;
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+

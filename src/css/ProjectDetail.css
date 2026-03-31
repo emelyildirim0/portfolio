@@ -1,0 +1,37 @@
+.proj-detail {
+  padding: 28px 0 8px;
+}
+
+.proj-head .proj-title {
+  margin: 0;
+}
+
+.proj-side {
+  display: grid;
+  gap: 12px;
+}
+
+.proj-card {
+  border: 1px solid var(--border);
+  background: rgba(255, 255, 255, 0.92);
+  border-radius: var(--radius-sm);
+  padding: 16px;
+}
+
+.proj-kicker {
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  font-size: 11px;
+  color: rgba(31, 41, 55, 0.60);
+}
+
+.proj-list {
+  margin: 12px 0 0;
+  padding-left: 18px;
+}
+
+.proj-list li {
+  margin: 7px 0;
+}
+

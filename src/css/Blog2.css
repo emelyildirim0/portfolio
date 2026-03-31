@@ -1,0 +1,33 @@
+.blog {
+  padding: 28px 0 8px;
+}
+
+.blog-lead {
+  margin: 8px 0 0;
+}
+
+.blog-list {
+  display: grid;
+  gap: 14px;
+}
+
+.blog-item {
+  border: 1px solid var(--border);
+  background: rgba(255, 255, 255, 0.72);
+  border-radius: var(--radius-sm);
+  padding: 18px;
+}
+
+.blog-item-top {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  align-items: center;
+}
+
+.blog-item-title {
+  margin: 10px 0 0;
+  font-size: 20px;
+  line-height: 1.2;
+}
+

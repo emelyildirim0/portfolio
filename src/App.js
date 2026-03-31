@@ -1,36 +1,42 @@
-import Navbar from "./components/Navbar";
-import Footer from "./components/Footer";
-import About from "./components/About";
-import Projects from "./components/Projects";
-import Contacts from "./components/Contacts";
-import Blog from "./components/Blog";
+import { Routes, Route, Navigate } from "react-router-dom";
+import Layout from "./components/Layout";
+import HomePage from "./pages/HomePage";
+import BlogIndexPage from "./pages/BlogIndexPage";
+import BlogPostPage from "./pages/BlogPostPage";
+import ProjectsPage from "./pages/ProjectsPage";
+import ProjectDetailPage from "./pages/ProjectDetailPage";
+import AboutPage from "./pages/AboutPage";
+import ContactPage from "./pages/ContactPage";
+import ResumePage from "./pages/ResumePage";
 import en from "./lang/en";
 import tr from "./lang/tr";
-import portfolioImage from "./assets/portfolio.png";
-import calculatorImage from "./assets/calculator.png";
-import todoImage from "./assets/todolist.png";
-import weatherImage from "./assets/weather.png";
 import "./css/App.css";
 import { useState } from "react";
 
 function App() {
-  const [lang, setLang] = useState("en");
+  const [lang, setLang] = useState("tr");
   const t = lang === "en" ? en : tr;
-  const projectList = t.projectsList.map((item, index) => ({
-    ...item,
-    image: [portfolioImage, calculatorImage, todoImage, weatherImage][index],
-  }));
 
   return (
-    <div>
-      <Navbar setLang={setLang} title={t} lang={lang} />
-      <h1 style={{ textAlign: "center", marginTop: "2rem" }}>{t.welcome}</h1>
-      <About t={t} />
-      <Projects projects={projectList} title={t} />
-      <Blog t={t} />
-      <Contacts t={t} />
-      <Footer props={t} />
-    </div>
+    <Routes>
+      <Route element={<Layout lang={lang} setLang={setLang} t={t} />}>
+        <Route index element={<HomePage lang={lang} t={t} />} />
+        <Route path="blog" element={<BlogIndexPage lang={lang} t={t} />} />
+        <Route
+          path="blog/:slug"
+          element={<BlogPostPage lang={lang} t={t} />}
+        />
+        <Route path="projects" element={<ProjectsPage lang={lang} t={t} />} />
+        <Route
+          path="projects/:slug"
+          element={<ProjectDetailPage lang={lang} t={t} />}
+        />
+        <Route path="resume" element={<ResumePage t={t} lang={lang} />} />
+        <Route path="about" element={<AboutPage t={t} />} />
+        <Route path="contact" element={<ContactPage t={t} />} />
+        <Route path="*" element={<Navigate to="/" replace />} />
+      </Route>
+    </Routes>
   );
 }
 export default App;

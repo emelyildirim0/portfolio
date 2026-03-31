@@ -1,0 +1,61 @@
+.resume {
+  padding: 28px 0 8px;
+}
+
+.resume-side {
+  display: grid;
+  gap: 12px;
+}
+
+.resume-card {
+  border: 1px solid var(--border);
+  background: rgba(255, 255, 255, 0.92);
+  border-radius: var(--radius-sm);
+  padding: 16px;
+}
+
+.resume-kicker {
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  font-size: 11px;
+  color: rgba(31, 41, 55, 0.60);
+}
+
+.resume-skill-groups {
+  margin-top: 12px;
+  display: grid;
+  gap: 14px;
+}
+
+.resume-group {
+  margin-top: 6px;
+  font-weight: 800;
+  letter-spacing: -0.01em;
+}
+
+.resume-item {
+  border: 1px solid var(--border);
+  background: rgba(255, 255, 255, 0.92);
+  border-radius: var(--radius-sm);
+  padding: 16px;
+  margin-top: 12px;
+}
+
+.resume-item-top {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  flex-wrap: wrap;
+  align-items: baseline;
+}
+
+.resume-item-title {
+  font-weight: 900;
+  letter-spacing: -0.01em;
+}
+
+.resume-mini {
+  margin-top: 12px;
+}
+
