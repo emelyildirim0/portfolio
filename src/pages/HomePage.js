@@ -27,14 +27,14 @@ function HomePage({ t, lang }) {
             {t.heroCtaSecondary}
           </Link>
         </div>
-
+        {/*
         <div className="hero-highlights">
           {profile.highlights.slice(0, 4).map((h) => (
             <div key={h} className="hero-chip">
               {h}
-            </div>
+            </div> 
           ))}
-        </div>
+        </div>  */}
       </section>
 
       <section className="glass section trust">
