@@ -37,7 +37,8 @@ const en = {
   sectionLatestPosts: "Featured writing",
   sectionProjects: "Selected work",
   sectionApproach: "How I work",
-  sectionApproachLead: "Need → process → technical decisions → measurable outcomes.",
+  sectionApproachLead:
+    "Need → process → technical decisions → measurable outcomes.",
   finalCtaTitle: "Want to work together?",
   finalCtaLead:
     "For a role, project, or consulting — feel free to reach out. You can also review my resume and selected work.",
@@ -52,9 +53,15 @@ const en = {
   approachSteps: [
     { title: "Clarify the need", desc: "Understand the problem and users." },
     { title: "Model & simplify", desc: "Find bottlenecks and define flow." },
-    { title: "Design the technical core", desc: "Data model, rules, performance." },
+    {
+      title: "Design the technical core",
+      desc: "Data model, rules, performance.",
+    },
     { title: "Build usable UI", desc: "Interfaces that truly support work." },
-    { title: "Iterate & improve", desc: "Maintenance, reporting, documentation." },
+    {
+      title: "Iterate & improve",
+      desc: "Maintenance, reporting, documentation.",
+    },
   ],
 
   blogTitle: "Writing",

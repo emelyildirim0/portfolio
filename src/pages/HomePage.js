@@ -104,7 +104,9 @@ function HomePage({ t, lang }) {
         <div className="approach">
           {t.approachSteps.map((s, idx) => (
             <div className="approach-step" key={s.title}>
-              <div className="approach-no">{String(idx + 1).padStart(2, "0")}</div>
+              <div className="approach-no">
+                {String(idx + 1).padStart(2, "0")}
+              </div>
               <div className="approach-body">
                 <div className="approach-title">{s.title}</div>
                 <div className="muted">{s.desc}</div>
@@ -135,4 +137,3 @@ function HomePage({ t, lang }) {
 }
 
 export default HomePage;
-

@@ -43,7 +43,8 @@ const tr = {
   sectionLatestPosts: "Öne Çıkan Yazılar",
   sectionProjects: "Seçili Çalışmalar",
   sectionApproach: "Nasıl çalışırım?",
-  sectionApproachLead: "İş ihtiyacı → süreç → teknik kararlar → ölçülebilir sonuç.",
+  sectionApproachLead:
+    "İş ihtiyacı → süreç → teknik kararlar → ölçülebilir sonuç.",
   finalCtaTitle: "Birlikte çalışmak ister misiniz?",
   finalCtaLead:
     "Bir pozisyon, proje ya da danışmanlık ihtiyacı için iletişime geçebilirsiniz. Detaylı CV ve seçili çalışmalar sayfalarından ilerleyebiliriz.",
@@ -56,11 +57,26 @@ const tr = {
   ],
 
   approachSteps: [
-    { title: "İhtiyacı dinlerim", desc: "Problemi ve kullanıcıyı netleştiririm." },
-    { title: "Süreci modelleyip sadeleştiririm", desc: "Darboğazları ortaya çıkarırım." },
-    { title: "Teknik yapıyı kurarım", desc: "Veri modeli + iş kuralı + performans." },
-    { title: "Kullanılabilir arayüz üretirim", desc: "Ekranlar gerçekten iş görür." },
-    { title: "İyileştirmeyi sürdürürüm", desc: "Bakım, rapor ve dokümantasyon." },
+    {
+      title: "İhtiyacı dinlerim",
+      desc: "Problemi ve kullanıcıyı netleştiririm.",
+    },
+    {
+      title: "Süreci modelleyip sadeleştiririm",
+      desc: "Darboğazları ortaya çıkarırım.",
+    },
+    {
+      title: "Teknik yapıyı kurarım",
+      desc: "Veri modeli + iş kuralı + performans.",
+    },
+    {
+      title: "Kullanılabilir arayüz üretirim",
+      desc: "Ekranlar gerçekten iş görür.",
+    },
+    {
+      title: "İyileştirmeyi sürdürürüm",
+      desc: "Bakım, rapor ve dokümantasyon.",
+    },
   ],
 
   // blog
